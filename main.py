@@ -7,6 +7,8 @@ Token = '5368381125:AAGlTGU8xvi1x4kF4qwBsCjvPDs1PJcueAA'
 bot = telebot.TeleBot(Token)
 
 glob_rem = Reminder()
+
+
 @bot.message_handler(commands=['start'])
 def start(massage):
     buttons = types.ReplyKeyboardMarkup(resize_keyboard=True)
